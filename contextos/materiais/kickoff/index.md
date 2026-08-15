@@ -4,7 +4,7 @@ title: Kickoff — Clube de Leitura D'elas
 description: Reunião inaugural do projeto com definição de escopo, personas e próximos passos.
 tags: [kickoff, governanca, produto]
 status: ativo
-timestamp: 2024-08-11
+timestamp: 2026-08-11
 ---
 
 # Kickoff — Clube de Leitura D'elas

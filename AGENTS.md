@@ -30,7 +30,7 @@ title: Título do documento
 description: Uma frase que resume o documento (aparece nos index.md).
 tags: [tag1, tag2]
 status: ativo # rascunho | ativo
-timestamp: 2025-08-11
+timestamp: 2026-08-11
 ---
 ```
 

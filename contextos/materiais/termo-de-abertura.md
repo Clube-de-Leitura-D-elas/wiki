@@ -4,7 +4,7 @@ title: Termo de Abertura do Projeto
 description: Termo de abertura do projeto Clube de Leitura D'Elas — plataforma web responsiva para gestão e organização do clube de leitura.
 tags: [clube-de-leitura, projeto, escopo, plataforma]
 status: ativo
-timestamp: 2025-08-11
+timestamp: 2026-08-11
 ---
 
 # Termo de Abertura do Projeto
