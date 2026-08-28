@@ -1,0 +1,1259 @@
+Bruno: Muito importante pra gente esclarecer muita dúvida.
+
+Alessandra: Quem são os AGES 4?
+
+Alessandra: Hoje eu não sou prof, né?
+
+Claudine: Hoje você é cliente.
+
+Alessandra: Hoje eu sou cliente porque eu também faço parte do clube de leitura e a Claudine é minha irmã, entendeu? Por isso que eu estou aqui. Por acaso não tem aula, por acaso dou aula. Mas se você me permite, eu queria saber quem são os AGES 1, AGES 2, AGES 3 e AGES 4 pra gente poder conhecer o time.
+
+Davi: A gente vem e apresenta.
+
+Natan: Tá bom.
+
+Botega: Olá!
+
+Speaker G: Oi!
+
+Bruno: A gente vai se apresentar? Nós somos as 4?
+
+Alessandra: Quem são as 4? Ah, são 4 as 4.
+
+Speaker H: Tá, beleza.
+
+Bruno: Então a gente vai apresentar o que foi desenvolvido na sprint 0, o que nós desenvolvemos a partir daquela conversa inicial, e a gente também vai falar um pouco do que a gente planejou para as próximas sprints, além dos protótipos de tela. Essa aqui é o que a gente vai apresentar hoje, então o objetivo geral é é mostrar os protótipos e o nosso planejamento para o semestre. Aqui tudo que a gente vai mostrar são os protótipos, né, a gente vai mostrar bastante tela, ainda não é um aplicativo implementado, é mais um protótipo para vocês verem, terem uma noção de como é que vai ficar e como é que foi a nossa visão. Então aqui como foi a nossa sprint zero, o foco dela foi debater as funcionalidades do aplicativo entre a equipe, decidir tecnologias, decidir com base no que todo mundo sabe, né, e fazer os protótipos das telas. Aqui a gente quis começar assim com a visão do produto no geral, do que a gente entendeu do ciclo da leitora e do ciclo da administração, para garantir que a gente está na mesma página. Então a leitora começa conhecendo o clube, pode ser pelo Instagram, por indicação, ela vai preencher um formulário Onde ela vai ser aquele mesmo formulário do Google Forms que vocês já têm. A gente debateu bastante como é que seria feito esse fluxo e a gente decidiu que para manter o que vocês já usam, a gente vai seguir usando o Google Forms, mas com algumas melhorias na qualidade de vida para aceitar e fazer a gestão das participantes. Então depois que a leitora aceita, ela entra num grupo e daí ela passa a ter acesso ao aplicativo. Toda a parte de cima não é no aplicativo que a gente vai desenvolver, essa parte aqui seria de fato no aplicativo. Então isso engloba toda a parte de indicação de livro, então se eu tô num grupo eu posso indicar um livro para aquele grupo, eu posso participar do encontro, dentro do encontro tem a lista de presença, o sorteio do próximo livro, o pós-encontro que seria o upload de fotos do grupo, fotos do encontro ali e avaliação de livros também. E daí a preparação para o próximo encontro, onde a anfitriã vai marcar o local, horário, esse tipo de coisa. Aqui a gente dividiu as pessoas que vão usar o sistema, as personas. Então a gente tem a candidata, que entra, que descobre o clube pelo Instagram, por algum lugar. Depois ela vira leitora quando ela é aceita. A leitora é o foco principal do aplicativo, né? Tem a coordenadora também que faz a gestão do grupo, então ela tem alguns acessos a mais, ela pode fazer upload de fotos e realizar o sorteio. A anfitriã, ela é atribuída por encontro. E a gente também tem o grupo de apoio/administração que a gente vai falar um pouco mais agora. Isso aqui são as funcionalidades que entram no no protótipo, no MVP. Então a gente decidiu seguir com o aplicativo mobile porque é tanto o que a equipe tem mais interesse em desenvolver como é a solução que nós entendemos que faz mais sentido, um aplicativo mobile e não uma solução web. Então aqui na parte da leitora, leitora e coordenadora, né, tem acesso ao perfil, grupos, indicação de livro, o que que a gente já falou, e também para gestão. Como a gestão vai ter algumas tarefas um pouco mais complexas, né, ela precisa ver todos os grupos, ver todos os participantes de todos os grupos, ver todos os encontros, a gente decidiu, optou por um painel web onde tu pode acessar no computador numa tela maior e tudo mais. Então nesse painel web o que a gente vai ter? Vai ter a lista das inscrições, Onde tu vai poder ver todo formulário que for preenchido, vai direto para o painel, tu consegue ver todos os dados ali e aprovar ou não. Inclusive, a gente já tava fazendo alguns testes assim sobre como é que a gente faria para ativar a conta de uma leitora assim que fosse aprovada, né. A gente optou por enviar um email para leitora. Não sei como é que vocês fazem isso hoje, mas E a gente pode aperfeiçoar isso com o tempo. Nossa primeira ideia foi o email.
+
+Alessandra: Posso fazer uma pergunta? Pode botar uma ali só. Por que a decisão de não botar o form dentro do aplicativo?
+
+Bruno: Mas porque se o form fosse dentro do aplicativo, toda candidata teria que baixar o aplicativo e criar uma conta ou entrar numa área não logada.
+
+Daniel: E baixar o aplicativo já é uma pessoa que já tem acesso, né?
+
+Bruno: Isso, você já tem o formulário enviado.
+
+Alessandra: Perde a rapidez do Insta ali, né?
+
+Bruno: Você vai ter o link da bio e já preenche tudo.
+
+Speaker J: Nessa aprovação da leitora no grupo, já indicar o grupo, porque ela nunca vai entrar sem grupo. Uma vez aprovada, ela vai sair dos grupos, já é um requisito obrigatório.
+
+Speaker H: A gente tem essas formas de participar, a gente vai mostrar depois.
+
+Bruno: Algumas decisões que a gente tomou do aplicativo de celular e o painel web. A inscrição continua fora do app e também algumas funcionalidades de rede social mais avançadas a gente decidiu postergar porque comentários, esse tipo de interação, curtir um post de outra pessoa, isso tanto é difícil de implementar como é difícil de moderar e isso precisa de tempo e é uma coisa bem mais complexa moderar uma rede social. Então a gente decidiu postergar essas funcionalidades.
+
+Daniel: O que a gente deixou mais próximo de uma rede social, comunidade, seria a possibilidade de avaliar os livros, né?
+
+Botega: Então pode dar lá uma nota para o livro.
+
+Speaker G: Isso é legal.
+
+Claudine: Lá dentro do aplicativo mesmo. Isso é uma rede assim, só umas estrelinhas lá, as altas estrelinhas.
+
+Bruno: Mas também sem funcionalidades como curtir, repostar, comentários.
+
+Claudine: Mas avaliar o livro sim. Então o livro vai ter tantas votos positivos, nota 5, nota 4.
+
+Davi: Você pode escrever um comentário.
+
+Claudine: Isso é excelente. Isso é bastante coisa.
+
+Speaker J: É porque assim, a gente não quer replicar o Instagram dentro do aplicativo. Não, não é isso que tem o Instagram.
+
+Botega: A ideia não é tirar o WhatsApp que ele precisa estar, não é tirar Instagram vai continuar.
+
+Claudine: O Instagram não tem isso adequado, um lugar que tu possa avaliar um produto, né? Não tem, não tem. E isso faz falta. Qual é a nota do livro? Porque a gente vai lá postar reunião, ah, foi lindo, foi bonito, só que todo mundo de olho, né? A pessoa que tá acompanhando a rede social, vou comprar esse livro aí, ó, todos com cara feliz segurando o livro, mas ninguém gostou.
+
+Alessandra: Então assim, é ruim, né?
+
+Claudine: E tem livro que é assim mesmo.
+
+Speaker J: A gente pode usar essa informação que a gente vai ter um ranking de livros nessa nossa gestão, e aí pra gente fazer alguns posts no Instagram Olha os mais bem avaliados do site.
+
+Claudine: Aí a gente olha, ai, aquele grupo fez aquele livro, vamos pegar também como se fosse assim uma referência.
+
+Speaker H: Não é. Mas é que às vezes o livro não é, mas o encontro, a discussão, a reunião sempre é muito boa.
+
+Natan: É uma releitura.
+
+Claudine: Mas tem livro que predominantemente ninguém gostou assim, né? As pessoas gostaram, não gostei, também não, também não, também não.
+
+Alessandra: Mas a reunião foi ótima, entendeu?
+
+Claudine: Se distraiu de lá até a água, né? Leite de pedra, né?
+
+Bruno: É mais o evento social do que o evento pedagógico.
+
+Alessandra: É, também.
+
+Bruno: Aqui a gente deixou um pouco do cronograma das sprints que a gente vai ter. Nós temos 5 sprints, essa foi sprint 0, e aqui tem as datas, né? E essas são as funcionalidades que a gente chegou, que a gente decidiu para cada sprint.
+
+Claudine: Deixa eu tirar uma fotinho para eu não me esquecer. Eles nos mandam depois, né? Aqui na foto eu acho mais fácil.
+
+Alessandra: E quais são os user stories que estão dentro de cada sprint?
+
+Bruno: A gente não colocou aqui dentro da dentro da apresentação, mas a gente tá definindo elas no linear que a gente vai rastrear e vai desenvolver a partir dali.
+
+Alessandra: Tá, porque é bom ter as user stories, porque tem os critérios de aceitação para depois isso a gente aprovar, que aprova, não aprova, né, por user stories, né?
+
+Bruno: Sim, a gente pode colocar nas próximas apresentações.
+
+Alessandra: Fazer certinho, né?
+
+Bruno: Ai, Jesus!
+
+Speaker H: Desculpa, gente.
+
+Daniel: A gente não tem as user stories, mas aqui seriam os épicos, né, abaixo da sprint.
+
+Alessandra: Exatamente, essa é a preocupação, né, quando você começa a abrir nas user stories vocês veem a complexidade, se cabe no escopo. Se vocês não abrem, vocês estão no chute.
+
+Bruno: Então aqui agora a gente vai apresentar o protótipo em si.
+
+Claudine: Vocês querem me dar uma volta lá? Volta lá que eu quero tirar uma foto.
+
+Speaker G: Tá quente, tá quente.
+
+Natan: É, tem que descer.
+
+Claudine: Não sei, um sorrisinho aí, sorrisinho. Não, depois tem um. Não, eu sei, mas é com vocês o protótipo, é muito bonitinho.
+
+Daniel: Ah, tá quente, né?
+
+Claudine: Agora verão bateu.
+
+Speaker J: Até amanhã só.
+
+Claudine: Bom, com vocês o protótipo, minha gente. Vamos lá.
+
+Bruno: Ele jogou os fluxos, deve ser certinho. Vou ter que ir de fluxo em fluxo hoje. Não, mas veio só meio confuso.
+
+Alessandra: Vocês fizeram no Figma?
+
+Botega: Sim, sim, também, também.
+
+Alessandra: Com IA ou sem IA?
+
+Davi: Sem IA. Utilizando para ajuda, mas não para fazer.
+
+Bruno: A gente usou IA mais no começo do Figma para gerar protótipos das telas, um esboço das telas, né? Mas o Figma em si, o Figma final foi desenvolvido à mão mesmo.
+
+Natan: E para tokenizar os assets?
+
+Alessandra: Isso, fizeram os assets direitinho?
+
+Bruno: Sim, inclusive tá sendo usado na apresentação também.
+
+Speaker J: É engraçado que pede para eles fazerem na mão e eu peço para minha equipe começar a usar iate, que é o contrário, né?
+
+Alessandra: Porque eu trabalho com a galera antiga.
+
+Speaker J: Certíssimo, certíssimo. Tem que ir para Deus aí fazer, usar iate. Tem que saber fazer antes para poder criticar iate, só que o desafio lá é o contrário, uma galera das antigas que não quer usar iate.
+
+Alessandra: Gente, vamos lá!
+
+Daniel: Essa seria meio que a tela inicial, quando a pessoa baixou o aplicativo e entrou. No caso, ela foi aprovada e agora ela tem que colocar o token que chegou no email dela após a aprovação.
+
+Alessandra: Vocês vão fazer aquela telinha inicial, a splash?
+
+Bruno: Porque, né, só não foi, só não apareceu aqui no protótipo, mas sim, a gente tá, vai fazer uma assim ali de leitura.
+
+Daniel: Aí depois a pessoa, usuário, iria verificar os dados.
+
+Alessandra: Volta, volta, volta de novo ali. Volta primeiro. Então ele veio, tá assim, tá bom para vocês verem.
+
+Claudine: Sua vaga foi confirmada.
+
+Alessandra: Mas ele assim, ó, ele vai abrir o aplicativo, tem a telinha do primeiro, primeira vez que ele entrar, né?
+
+Bruno: Sim, a primeira vez a leitora vai receber um email dizendo que a vaga foi confirmada e vai ter um código. Aí ela vai baixar o aplicativo, vai inserir o código e daí vai ver.
+
+Alessandra: Como é que o aplicativo sabe que é aquela pessoa?
+
+Bruno: Pelo forms que foi aprovado pela gestão.
+
+Daniel: A gente fez uma integração com o banco.
+
+Natan: Dá para mostrar, não tem não?
+
+Bruno: A gente pode mostrar.
+
+Speaker J: Vocês têm protótipo para a parte web também?
+
+Bruno: Sim, sim, nós vamos mostrar.
+
+Speaker J: Ah, porque vai responder essas coisas.
+
+Botega: Depois a gente pode fazer a demonstração disso. Do token funcionando, chegando por email.
+
+Daniel: Que seria a tela para ela verificar os dados dela, que teria os dados dela.
+
+Alessandra: E uma pessoa que já tem o clube e vai entrar?
+
+Botega: E aí é o tombo de telefone, por exemplo.
+
+Claudine: Não, não, não, eu entrei no clube, já fiz isso aí, qual é a primeira tela que vem? Primeira tela é o login.
+
+Botega: Sim, tem uma home depois disso.
+
+Alessandra: Entendeu qual é a minha dúvida? Como é que tu vai saber se é a primeira vez que ela tá entrando ou não?
+
+Botega: Sim, quando a primeira vez que ela entrar ela já vai estar em um grupo.
+
+Claudine: Então eu baixei o aplicativo, tá? Mas eu já tô dentro, eu não rebaixei o aplicativo lá.
+
+Speaker J: Mas eu entendo que todo mundo vai ter que ativar, porque vai ter login.
+
+Alessandra: Todas nós já estamos conectadas. Tem uma telinha de emergência.
+
+Speaker J: Tá bom, show. Não sei se vai ter mais um campo com o Instagram, é legal a gente saber o Instagram das pessoas, né?
+
+Claudine: Mas vai estar no fórum, isso já tava no fórum.
+
+Bruno: Sim, sim, aqui é só para a gente trazer para cá.
+
+Speaker J: É importante passar informação, tá quente esse quarto, tá quente.
+
+Speaker H: Legal.
+
+Davi: Agora vai, eu acho.
+
+Speaker H: Vamos deixar de surpresa um pouco.
+
+Daniel: Verificação de dados ainda, nível de escolaridade, profissão. Se participa de algum outro grupo de leitura, se teria interesse em se voluntariar como uma coordenadora. Aqui seria um livro de ficção ou do tema do grupo que ela entrou. E aqui um campo para ela dizer o que ela espera participar do grupo de leitura delas.
+
+Claudine: Não é meio chato ela ter que preencher isso duas vezes? Porque ela vai estar no fórum, ela vai preencher tudo isso aí e ela vai ter que preencher outra vez tudo isso?
+
+Bruno: Não, ela não vai ter que preencher outra vez. É que já vem preenchido, né?
+
+Speaker G: Ela só confirma, caso queira trocar alguma informação que ele tenha botado errado.
+
+Claudine: O dado que ela podia de repente colocou lá errado, é uma chance dela arrumar.
+
+Botega: É uma revisão, assim como antes tinha também.
+
+Claudine: Tá, perfeito.
+
+Alessandra: Então some, vai para o banco de dados e o aplicativo vai ler o mesmo banco que ela preencheu o Forms. Se vocês estão dizendo que vocês vão trazer os dados de lá, vocês quando ele de tal forma já vai cair naquele banco.
+
+Speaker J: E só uma vez, né? Carrega uma vez, não atualiza mais, mas começa depois manter dentro do banco. Isso a gente tem que entender também.
+
+Alessandra: Isso é mais complicado.
+
+Bruno: Já rolou?
+
+Speaker J: Sprint zero fizemos isso.
+
+Natan: Tá bom, tô gostando.
+
+Daniel: Seria uma home, né?
+
+Bruno: Depois que terminou a inscrição Que bonitinho, tô adorando as caras.
+
+Daniel: Aqui a tela de home, que seria a tela de home, né, tela inicial do usuário. Mostraria as informações sobre o grupo que o usuário participa. Junto aos próximos eventos, um botão para ela confirmar a presença no próximo encontro. Quando não tiver o encontro, a ideia é ficar mais assim escondido os dados.
+
+Claudine: Ah, se ela tá participando de 3 grupos, aparece os 3 grupos?
+
+Daniel: Sim, aparece todos os calendários.
+
+Speaker J: Nesse caso vai ser 1 ou 2, eu acho, né?
+
+Claudine: Tem gente que tá em 5.
+
+Daniel: Aqui são os detalhes de um grupo específico que a Zória abriu antes. A gente teve a ideia de botar esse botão de abrir o WhatsApp para ela ser encaminhada para o WhatsApp do grupo, já que a ideia não é Essas integrações todas assim, dá para fazer depois. Aqui teria o botão de indicação de livro também, o livro que foi sorteado para o encontro.
+
+Claudine: É bom que é até interessante isso aí, que ele passa, foi aprovado essa entrada, tem que entrar no aplicativo primeiro, depois tu dá o WhatsApp. Eu só acho que eu não invento, eu só acho que a entrada ali tá ao contrário.
+
+Alessandra: Você deveria ter, vocês deveriam entrar com a splash, o login, sou nova ou tô entrando agora. Aí você clica naquele link e ele abre o formulário, tá? Quer abrir direto naquele código ali? É meio esquisito, tá muito esquisito, entendeu? Abre no login, abre no splash, abre no login, tem um linkzinho ali, ó, quero fazer meu cadastro, sou nova, é minha primeira vez, sei lá, um linkzinho dele, clica, aí abre ali. Abre o formulário, senão ela põe login, senha e entra.
+
+Davi: Sim, porque o formulário não é esse dentro do aplicativo, direto do Instagram. Poderia nos dois, no caso.
+
+Alessandra: Aí não vincula com o aplicativo, entendeu?
+
+Daniel: Não vincula com aquele primeiro form e não tem essa questão do banco.
+
+Alessandra: Aí pode até tirar aquelas perguntas que estão sobrando. Não precisa fazer aquelas perguntas que estão sobrando no formulário.
+
+Speaker H: E se a pessoa chegar via aplicativo, tá ali no tá, abre o aplicativo e ela não sabe do Instagram, não sabe do formulário, ela só coloca o seu nome. Sim, mas ela pode acessar direto o formulário e não vir?
+
+Natan: Não, pode não.
+
+Bruno: Mas o processo de aprovação continua?
+
+Claudine: Pode sim, vai para o e-mail e às vezes não vai ter inscrição de duas formas.
+
+Speaker J: Eu acho que isso vai ficar meio bom. Mas a gente tem que dizer o grupo.
+
+Bruno: Qual é o grupo?
+
+Claudine: E em que momento a gente vai dizer o grupo?
+
+Daniel: Só depois.
+
+Speaker H: A gente só vai ter que esperar isso sair da gente.
+
+Speaker J: Eu acho que vai ficar meio bom. Confuso assim, eu acho que vai ficar muito complexo para fazer. A gente não precisava disso, porque assim, entra sempre pelo Forms. O Forms é só saída, pega informação dos Forms, joga no banco de dados, e não entra informação nova no banco de dados que não seja.
+
+Alessandra: Mas olha só, eles não vão fazer integração de Insta com o banco?
+
+Speaker J: Não, Insta não, Forms não, não.
+
+Alessandra: Eles não vão fazer integração Forms com o banco de dados?
+
+Speaker J: Tá, então esquece, não dá. Ou então na sessão, naquele painel web que a gente vai ver, a gente vai falar. Só que assim, ó, é difícil colocar a entrada para 2 contas porque o aplicativo não faz o transporte, o aplicativo é só o computador entrando no aplicativo.
+
+Natan: A gente pode interromper rapidinho a apresentação?
+
+Claudine: Pode, pode.
+
+Speaker J: A gente demonstra, bota no—
+
+Daniel: tu não quer botar?
+
+Natan: Quem tem naquele estado é um informe de teste, não é o mesmo de vocês, tá? Pode escanear, mas aí não pode.
+
+Alessandra: Se quiser só mandar no WhatsApp, só para—
+
+Speaker J: eu tô de futebol.
+
+Alessandra: Mas esse é o form, daí entra no banco.
+
+Daniel: Se eu deixo o nome, qual é o seu form, né?
+
+Natan: Sim, o banco é sua mesa. Quer conectar ali?
+
+Botega: Quem quiser testar também, fica à vontade.
+
+Natan: A meia-noite de terça-feira. Pera aí que eu te troco.
+
+Speaker J: É legal, só que vai dar muita confusão isso.
+
+Claudine: Então tá bom, o correto é você decidir. Você é nova, você é nova, vai clicar ali.
+
+Alessandra: Ou Paulo, é o seguinte, é nova, fica dando a senha da nova conta. Mas ela não sabe muito, mas quem vai passar vai ser a coordenação.
+
+Speaker J: Por isso que a coordenação, se ela não tá estruturada para o aplicativo, a coordenação não sabe ainda. Tipo, fórmula, a gente não sabe.
+
+Davi: Depende, porque a diferença é que pelo aplicativo a gente manda no Décimo, sei lá, pessoas novas, pessoas novas pelo aplicativo que não vai vir do fórum. O certo seria vocês decidirem qual vocês querem centralizar, no fórum ou no aplicativo. Dá para ter os dois, mas o certo é ter centralizado.
+
+Claudine: Não faz sentido ter os dois, então.
+
+Speaker J: Porque você vai ter que ter toda uma gestão do tipo, a pessoa entrou, aí vai cair para o nosso painel web. Se ninguém aprovar, a pessoa não sabe se entrou, se não entrou, não recebeu o grupo, ela fica meio no limbo assim, né? Eu acho que é uma gestão a mais, não sei se vai ter tantos ganhos.
+
+Speaker H: Mas se não tiver aprovação, ela acha que tá dentro do grupo e se o grupo não for formado? Você já tá escutando?
+
+Speaker J: Não tem vaga, não entendo.
+
+Speaker H: Então não é isso, mas tem que ter aprovação.
+
+Claudine: Isso, por isso que eu tô—
+
+Speaker J: então eu quis dizer que assim, ó, quando eu hoje não aprova, ela não sabe o que tá acontecendo, não tem entrada, né?
+
+Alessandra: Não, não, não, não, não.
+
+Claudine: Até porque só porque ele fez o código não quer dizer que vai entrar no curso.
+
+Speaker J: Sim, mas eu acho que às vezes é uma explicação, não sei, né? Por isso que só entra no aplicativo quem já tem o número de código de ativação lá, que já foi Tudo que é aprovado pela gente. É, vamos simplificar a sentada lá. Vai achar, não vai ficar, vai ficar com dor chatinha. Depois tá dentro assim, né?
+
+Alessandra: E você põe o código embaixo, login e senha, que tem login e senha, e põe o código embaixo, código de ativação.
+
+Speaker J: Mas as pessoas não vão colocar, a questão é elas terem esse código de ativação, ela vai descer por email, ela recebe por email.
+
+Alessandra: Isso, só que em vez de tu ter aquela tela com aquele código ali, abre Abre o login e senha ou código de ativação.
+
+Botega: A ideia do código de ativação era justamente para não ter mais uma senha e mais um login, por exemplo. A gente está tratando também de pessoas de mais idade, então acaba tendo uma maior complexidade nessa questão.
+
+Alessandra: Mas ele fica por isso só via Magic Link?
+
+Natan: A ideia inicial seria, seria o que a gente tinha pensado, ele vai do A Carolina, ela acabou de preencher o Forms e a gente recebeu um email aqui para aprovar o usuário dela. Aqui está tudo, tipo, foi aprovado. Não tem tela ainda, tá? Tu deve receber um email em seguida, ou no teu spam, na caixa de entrada, confirmando que foi aprovada no grupo, com o ID, que é o ID que ela vai preencher no app para vincular as duas contas. É, não é esse código desse tamanho. Isso daí foi só um teste mesmo. Recebeu, né?
+
+Davi: Consegue.
+
+Natan: É, não vai ser isso aí, tá? Sim, aqui tem um, ela recebe o e-mail assim, ela recebe um e-mail assim com o código que ela precisa inserir lá no app. Não vai ser desse tamanho, é só exatamente esse, mas é nesse formato.
+
+Claudine: Da hora que a gestora disser aprovou, ela recebe o código.
+
+Speaker J: Esse fluxo tá legal, só que eu acho que aí o começo é o QR code que a leitora usa. Eu faria diferente. Tem lá o Forms e a gente vai ter um momento de gestão.
+
+Claudine: Isso continua sendo manual, cansado, já sabe qual é o grupo que a pessoa vai entrar.
+
+Speaker J: Uma vez isso, em vez de ser esse QR code, vai ter lá no painel web um link, alguma coisa para dizer ativar, incluir tal pessoa. Aí vai botar os dados que a gente já tem aqui em forms e dizer ela tá no grupo tal. E aí isso dispara um email que a pessoa recebe ativação.
+
+Claudine: Porque sabe o que que é ruim? Sabe o que que é ruim, tá? E eu tô acostumada, a gente tá com coordenador no Brasil inteiro, né? Eu não consigo mandar um planilhão Excel para coordenador agora com todas as informações, não consigo, não dá certo, tá? Então eu gostaria que esses dados já tivessem lá dentro do aplicativo. E ela, uma vez que ela indica um livro para ser inscrito, depois ela vai levar 2 meses para indicar aquele livro de novo.
+
+Speaker J: É, as pessoas são enroladas, né?
+
+Speaker H: Só que assim, para ela indicar, ela tem que saber que o livro já não tá, já não foi lido.
+
+Claudine: Ela pode trocar o livro depois, vai trocar sem saber o Indicar, eu tenho que falar, é o primeiro, indicação é o primeiro, depois é o mais trocado.
+
+Speaker J: A questão, acho que esse início assim, primeiro essa jornada de quem, de quem coloca ela, quem dá o código de ativação para ela é a gestora, não é pagadora, é gestora. Então vocês que vão lá e vai, vocês vão fazer uma ação que vai disparar esse e-mail e vai chegar ali no código e tudo mais. A outra coisa muito muito legal é que quando ela fizer isso, quando ela entrar, todos os dados do form já está em nós. Aí a gente tem que explorar.
+
+Botega: Essa é exatamente a lógica.
+
+Natan: Como que foi feito? Tipo, o form, se tu responde, ele tem uma automação bem simples que dispara. Cadê?
+
+Alessandra: Vocês vão conseguir colocar tudo isso em produção depois?
+
+Natan: Sim, ele dispara e ele cadastra Ele cadastra esse usuário.
+
+Alessandra: A minha preocupação não é a POC, a minha preocupação é que a gente gostaria muito de botar isso em produção depois, entendeu?
+
+Natan: Sim, sim, mas a POC é só para dizer. A ideia da POC é só tipo assim, a gente consegue fazer. Então quando o usuário preenche o forms, ele vem para essa tabela de pending users. Então ele fica aqui com o status de ele precisa ser aprovado ainda ou reprovado. Quando vocês aprovam, ele passa para o estado de aprovado. E o usuário recebe esse código. Só quando ele faz login no app, informa o código, aí ele efetivamente vem para essa tabela com os mesmos dados.
+
+Claudine: Se ele não ganhar o email, não vai conseguir.
+
+Natan: Exatamente, esse é o fluxo, esse foi o fluxo que eu imaginei. É uma automação bem simples no Forms ali, a gente dispara, cadastra o usuário aqui, então ele traz os dados do Forms, salva aqui, então o mesmo email, senha, endereço, etc., tá aqui, só que ele, enquanto ele tá no pending user, ele não tem acesso ao sistema. Ele só vira um usuário depois que ele faz o login e vincula o usuário dele, porque aquele UID é o usuário dele na tabela, basicamente.
+
+Speaker J: Aí vai pegar tudo aquilo que tá nesse page e vai levar tudo para o usuário.
+
+Natan: Exatamente, é isso aí.
+
+Speaker J: E o que a gente já tem preenchido lá, dá para jogar para dentro?
+
+Natan: A gente teria que fazer um, ver uma estratégia de migração. É, a gente precisa fazer uma estratégia de migração.
+
+Claudine: Melhor as pessoas preencherem de novo o formulário, as pessoas que já estão dentro.
+
+Speaker J: Eu acho que a gente podia arrumar os 1000 que já estão, entendeu?
+
+Natan: Nada impede a gente de popular esse formulário com todos que já estão aprovados, então a gente recebe e dispara muitos emails para todos os usuários com seus códigos, baixam o app, eles fazem a integração. É tipo assim, é só a primeira parte que a gente pensa em usuários novos, atuais a gente pode pular a primeira parte e já ir para a segunda, só que a gente precisa popular o banco. Então se vocês tiverem uma planilha com todo mundo, todos os dados, a gente consegue fazer isso direto.
+
+Speaker J: Isso faz direto, assim, eles que fazem uma operação especial, eles fazem isso por fora e não é uma funcionalidade, é a primeira vez só. E mas eu acho que o Forms aí, assim, pelo que eu lembro dele, eu acho ele meio confuso. Eu acho que a gente podia simplificar porque mais informações vão ser dentro do app. Nem tudo aquilo precisa, minha opinião, tá? Nem tudo aquilo precisa para tomada de decisão. Pode ser que brinca na base e o que que ela quer. Eu acho que reduzir o Forms Pode ser também, sabe?
+
+Speaker G: Eu acho mais fácil o pessoal abrir o aplicativo, como faz tudo.
+
+Claudine: Não, não, não, não, não, não, sem forma.
+
+Speaker J: Tem que ser não, eu falo, o pessoal não vai baixar o aplicativo assim. Mas olha só, sabe o que a gente pode pegar? A gente pode pegar bem simples, nome, data de nascimento, quer ser coordenador ou não, e fazer o depara e aquilo ser entrada para ser pago depois. Eu também acho assim, mas vamos ver, vamos ver.
+
+Botega: Volta para apresentação.
+
+Bruno: Celular emprestado?
+
+Daniel: Não, acho que eu tenho que separar do Eduardo.
+
+Bruno: Tudo bem, pode começar por aqui.
+
+Speaker H: Fechei o teu. Acho, eu vou conferir para o papai, eu vou receber o celular dela amanhã.
+
+Alessandra: Ela é bem confiante. Vocês criaram uma conta no Gmail?
+
+Natan: Nova criamos, @clubedireitura, club.delva.agis@gmail.com. E eu acabei pegando um do Agis, é que a gente não queria tipo botar no email de ninguém para poder tipo separar.
+
+Alessandra: Cria um email novo, porque daí quando você terminar, porque ela já tem email, só que o diretor dela é o email dela para fazer testes e coisa assim.
+
+Natan: Por exemplo, para um envio de email eu tive que pegar um domínio, então nunca vi o direito dela, os conteúdos, só para poder disparar esses emails.
+
+Alessandra: Sim, pois é, era isso que eu tava querendo.
+
+Daniel: Aqui a gente vai ter os participantes também, e clicando em exibir detalhes dos últimos eventos, a gente vem para um histórico dos eventos que esse usuário participou.
+
+Speaker J: Bem legal, que ele participou ou que o grupo teve?
+
+Botega: Que o grupo teve.
+
+Speaker J: Que legal também saber isso.
+
+Claudine: Legal.
+
+Daniel: Aí pode conferir mais detalhes, vai dar mais detalhes sobre esse encontro que o grupo teve.
+
+Botega: A descrição e a foto.
+
+Daniel: Aqui tem umas fotos depois de postado.
+
+Speaker J: Essa descrição aqui vai para o Insta, né?
+
+Claudine: Sim, dá para fazer o download ali daí, né?
+
+Daniel: Isso.
+
+Claudine: Por exemplo assim, né, a anfitriã ela consegue fazer o upload da sua fotos, colocar o textinho.
+
+Bruno: Sim, sim, depois do encontro, né?
+
+Claudine: É que daí a coordenadora aproveita, só faz um só baixo, né, para passar a mensagem ali.
+
+Botega: Eu pego as imagens, copiei, colo o texto ali, já tá.
+
+Natan: Mais para frente eu vou ficar mais próximo. Pode fazer integração com o próprio Instagram, ele já desfaz.
+
+Claudine: Nós estamos congelando aqui.
+
+Davi: Aqui seria a tela, seria essa barrinha aqui, seria a barra contábil educativa que fica aí para navegação de perfil, calendário, coisas que vai ter. Aqui é onde tu faz a pesquisa do livro. A gente consegue ter uma API que a gente quer pública, que a gente consegue buscar dados de vários livros. API. Então vai ser mais ou menos com isso que a gente vai alimentar isso daqui. Se tu clicar em algum livro, eu acho que o do Harry Potter que tá, ele vem com uma descrição do livro, com uma sinopse, né, do livro e tudo mais. Tu pode avaliar o livro caso tu queira ou indicar para algum grupo. Aqui embaixo tem comentários, comentários das pessoas. Quando a pessoa avalia fica aqui.
+
+Speaker J: Se tu clicar em indicar, isso é para leitora e depois quem é que pode incluir Incluir novos livros?
+
+Davi: Os livros, ele é alimentado por uma API pública.
+
+Alessandra: Essa API é gratuita?
+
+Davi: Se eu não tô enganado, todo livro que é publicado por uma editora oficial, ele é adicionado dentro dessa API.
+
+Speaker J: Tá, mas aí, mas assim, aí um livro novo que eu descobri como leitora, eu posso incluir depois e puxar os dados, mas eu posso como leitora Pode diminuir, pode selecionar, né?
+
+Claudine: Ver se ela tá ali naquela página.
+
+Botega: Tipo dicionário assim?
+
+Davi: Tipo assim, dicionário da base de dados?
+
+Speaker J: Isso.
+
+Natan: Não.
+
+Bruno: A ideia seria que ele já tá lá. A ideia seria sempre publicado por uma editora.
+
+Speaker J: Como dizer assim, esses dados aqui, essa pesquisa, ela pesquisa só os livros que estão dentro da nossa lista do clube?
+
+Davi: Não, não, não.
+
+Speaker J: Isso daqui é uma API do mundo lá fora.
+
+Davi: É uma API pública do mundo que tem todos os livros publicados por editoras.
+
+Natan: Então, se tiver comentários, avaliação, sim, eles ficam salvos em relação àquele livro, mas os dados do livro não.
+
+Claudine: É legal, sabe por quê? Se eu sou leitora e eu quero indicar outros livros além da lista do clube, acabei de ler um livro sensacional, até para que as pessoas saibam e indiquem nos seus clubes. Vai ser quem pediu, maravilhoso, não sei o quê dela, pode ir lá comentar e vai começar a aparecer, né, provavelmente no histórico de comentários, alguma coisa do gênero.
+
+Davi: Apresentação dos livros, né?
+
+Speaker J: A gente conseguiria, os livros que foram avaliados, eles vão aparecer. Eu tô sentindo falta daquele, não, eu acho que é bastante, eu acho confuso, eu acho, eu me confundisse, isso aqui é só o que tá daquele, sugere, ou se é do mundo. Pois é, tem que ter uma separação, acho que tem que deixar de alguma forma mais fácil, tá mais claro que é do mundo, entendeu? Isso, mas a gente também tem, eu acho que isso é um valor legal, porque A gente tem de uma lista de livros sugeridos nossos.
+
+Claudine: Sim.
+
+Speaker J: E aí, como é que a gente separa isso?
+
+Natan: É uma aba de pesquisar indicados.
+
+Speaker J: É sugeridos assim, né?
+
+Claudine: Vamos usar pesquisar indicados, as listas dos livros dos grupos.
+
+Speaker J: A gente tem assim, ó, a gente tem os termos que a gente tem usado, né? Sugeridos é entrei no grupo, não tenho a menor ideia de qual que é. Ah, a gente tem uma lista de sugeridos, cento e tantos livros lá que a gente manda para o Atraco. Estão, isso é sugerido. Outra coisa são os indicados pela leitora para o grupo, aí é outra coisa. Então o objeto de pesquisa ele vai em todos os cantos, agora como é que ele vai participar de cada um desses contextos é que a gente precisa definir.
+
+Alessandra: Ah, mas aquele buscarzinho ali é o do Google então?
+
+Davi: Isso, é do Google Pesquisa. A gente consegue nessa tela aqui fazer de alguma forma, talvez botar um filtro ou deixar padrão assim, os melhores avaliados vão estar sempre aparecendo primeiro aqui, entendeu? Algo nesse sentido.
+
+Speaker J: Aquele indicar, eu fiquei curiosa, aquele indicar eu não curti muito também. Aquele indicar para quê?
+
+Davi: Para algum grupo.
+
+Speaker H: Ah, é a sua indicação.
+
+Davi: Pode ter feito.
+
+Claudine: Vai lá, escolhe o médico que você quer indicar, clica, vai para dentro do grupo.
+
+Natan: Eu estou no grupo e ainda não indiquei um livro.
+
+Davi: Agora você vai para dentro do grupo, mas ele vai te mostrar uma tela com vários grupos.
+
+Claudine: É a indicação mais importante que tem.
+
+Speaker J: Não, tem que ser o grupo que tu tá, só o grupo que tu tá.
+
+Davi: Não, ele mostra todos os grupos que eu participo. Se tu participa de 6 grupos, ele vai aparecer ali na tela.
+
+Speaker J: E aí se tu já indicou para aquele livro que vai sobre couro, a galera tem certeza que quer sobre couro, blá blá blá, vai ter tudo bom.
+
+Speaker H: Mas é a mesma pessoa pode ter várias indicações.
+
+Botega: Ah, não, não sei lá, no mesmo grupo não, né?
+
+Davi: A ideia seria isso daqui, ó.
+
+Claudine: Quando eu tô clicando em indicar, ele vai aparecer. Ah, olha ali, ó.
+
+Botega: E aí, por exemplo, esse livro do Harry Potter no grupo 14 já teria sido indicado logo, não poderia indicar de novo.
+
+Davi: Ele ficaria sem som.
+
+Alessandra: Excelente.
+
+Speaker J: E se eu já tinha um livro lá, fala, você já tem livro tal, quer trocar?
+
+Daniel: Sim, é uma confirmaçãozinha na tela dele.
+
+Speaker H: Quer trocar, já manda o seu livro.
+
+Claudine: Não, você sabe, você quer trazer já o livro.
+
+Speaker G: Vamos pegar essa lista que você botou ali. Esses 3 grupos é o livro que ele está na lista ou que ele tá no grupo?
+
+Bruno: Tá no grupo.
+
+Claudine: Ele vai escolher para qual grupo ele quer indicar aquele livro.
+
+Davi: Tipo, olhar o plano.
+
+Speaker G: Ah, entendi.
+
+Claudine: 60 a mais vão entender bem direitinho. 60 a mais é um pouco diferente.
+
+Alessandra: É isso.
+
+Claudine: Aí a gente vai ter que sentar, fazer uma editorial. E a outra coisa, coordenadora vai poder fazer essas coisas também, sentar, fazer uma reunião só para isso.
+
+Davi: A partir daqui, depois de pesquisar o livro, a segunda barrinha aqui embaixo, tu consegue, por exemplo, ir no calendário. Ele mostra os próximos eventos, né, fica marcadinho assim, próximos eventos, o dia que tá, os eventos que já passaram. Se tu clicar Você não tá ganhando.
+
+Alessandra: Ele vai mostrar às vezes de todos os grupos ou só do grupo que eu participo?
+
+Davi: Só dos grupos que participa.
+
+Alessandra: Tá, se eu for leitora comum, se eu for coordenadora, ele traz tudo.
+
+Speaker J: Tanto espaço parte também, senão vai ficar muito simples.
+
+Claudine: Essa agenda poderia ficar mais bonita, tá? Essa agenda, tipo assim, é uma agenda normal, um calendário normal de pessoas normais, né? Nós não somos normais, somos o público leitora dessa. É só aparecer no dia que tem livro, os outros dias não me interessa nada. E já com a figurinha do livrinho assim, sabe?
+
+Bruno: Só os eventos, não só os eventos, que não informa quase nada isso aí.
+
+Speaker J: Informa as coisinhas pequenininhas.
+
+Claudine: Não, pode até ter essa opção também, tipo, visual geral do calendário do mês. Traz uma listinha, em vez de ter aquele calendário, sabe aquela coisa que tu clica no Outlook? Só traz ali a listinha pronta.
+
+Davi: Selecionar essa do caso, tem livrinho do lado.
+
+Claudine: É, ou livrinho do lado, fotinho do interesse.
+
+Davi: Faz o teu clique no encontro, clica embaixo, ele te leva para página do encontro que vai mostrar todos os dados daquele encontro que tá marcado ali, entende?
+
+Speaker J: Inclusive encontro que não aconteceu, obviamente. Aí não vai ter aquela foto das pessoas, vai ter a foto do livro, por exemplo.
+
+Claudine: Ali embaixo, bonitinha, e a fotinha do livro tá Tá, e uma pergunta pra gente: é interessante a leitora poder saber os outros grupos?
+
+Speaker J: Sim, porque ali ela tá procurando só pelos grupos que ele participa. Não, tem todos os grupos.
+
+Davi: Todos os grupos?
+
+Claudine: Todos os grupos. Mas assim, de repente ali embaixo vai aparecer, é porque assim, a gente posta no Instagram toda agenda de todos os grupos, tá?
+
+Speaker J: O calendário em cima pode ser útil, cores diferentes.
+
+Claudine: Eu vou mandar ali pra vocês como é que é a agenda.
+
+Daniel: Vocês postam agenda de todos os grupos.
+
+Davi: Eu entendi, eu entendi.
+
+Speaker J: No caso, vocês gostariam que ela pudesse—
+
+Claudine: Não, aí tu pode clicar assim, ó, só dos teus grupos e todos os grupos.
+
+Davi: Aqui tem um filtro.
+
+Alessandra: Sim, todos os grupos.
+
+Claudine: Eu quero ver todos os grupos. Tem gente que é viciada em visitar o grupo dos outros. Tá, mas se é um grupo que a pessoa não participa, tipo, é viciada em pedir convite.
+
+Speaker G: É que às vezes tem um livro sendo debatido em outro grupo e alguém quer ir. Mas eu acho assim, se tem essa opção, que eu acho que carrega muito visualmente, tá tudo aqui nos filtros.
+
+Davi: A gente pode deixar por padrão quando a pessoa abre o calendário ficar os dela e mostrar ali eventos de outros grupos. A gente consegue ver, ele vai te dar por de proximidade, sempre o mais próximo, e mostrando da mesma forma, mostrando os dados do grupo do livro.
+
+Bruno: Mas sobre esse detalhe de pedir para ir em um encontro do outro grupo, isso torna a leitora participante do grupo?
+
+Alessandra: Não, não, ela é só visitante.
+
+Speaker G: E vai ter que ser aprovada também. Então vai ter que ser aprovada pela coordenadora. Ela não pode assim, eu quero ir no outro do grupo, então eu vou. Ela vai pedir para coordenadora, é assim que funciona por enquanto, porque às vezes não tem lugar.
+
+Bruno: E ela vai fazer uma visita?
+
+Claudine: Vai fazer uma visita?
+
+Bruno: Não, ela não participa do grupo.
+
+Speaker J: É para o outro agente de alguma forma dar todos os dados no encontro, no endereço, e a pessoa chegar lá do nada, no Instagram a gente já consegue bloquear algumas vezes.
+
+Claudine: Todas as informações com detalhes só do teu Meu grupo. Sim, de outros grupos não.
+
+Davi: Só a data, o livro e o site para participar.
+
+Claudine: E talvez o nome da coordenadora podia aparecer para ela poder entrar em contato.
+
+Natan: Eu sou muito paranoico. Hein? Oi? Eu sou muito paranoico. Tu vai dar, te colocar o teu grupo todo?
+
+Speaker J: Não, não, não, não, não.
+
+Claudine: A nossa agenda que a gente publica, né?
+
+Natan: É só o carro, bota o local do carro.
+
+Claudine: Nem do carro, a economia já adapta.
+
+Davi: Nós podemos utilizar o modelo modelo que vocês usam hoje no Instagram, mostrando os dados daquele lugar, porque é uma data que já é utilizada, né?
+
+Speaker G: Eu acho que pode aparecer uma tela só os outros livros com datas que estão acontecendo, em que grupo, e se ela botar tipo assim, quero ir no Gabriel Garcia Marques dia 26 tal tal, que o nome da coordenadora daquele grupo que vai ter o evento apareça para ela poder entrar em contato. Eu acho que sim, e solicitar visita.
+
+Bruno: A partir do momento que ela aceita, ela pode ver o local.
+
+Speaker G: Isso, e aí essa coordenadora fica responsável em saber que aquela pessoa está a mais, que ela tá aceitando aquela visita. Acho que só a coordenadora precisa ver isso daí.
+
+Bruno: Entendi só. Esse fluxo a gente só não mapeou no protótipo ainda.
+
+Claudine: Eu acho que fica bom, que daí ela fica com todas as informações disponíveis. Que nem é bom, é que fica um passo livre.
+
+Davi: Sim, daí isso é um fluxo recorrente, a gente pode inclusive, caso a pessoa queira, por exemplo, ver outros grupos, que ela queira solicitar entrada, ver outros grupos, né, a gente teria também a opção no maiszinho aqui. Quando tu clica, ele te mostra outros grupos, e daí ele mostraria, se tu solicita entrada, ele vai te mostrar se tá aguardando aprovação se foi recusado ou, né, mostra tudo para mim.
+
+Claudine: Tem lista de espera por grupo também, além da geral? Porque eu tenho uma amiga no grupo 5, só quero entrar no grupo.
+
+Speaker J: Isso aqui é só coordenadora?
+
+Davi: Não, aqui a pessoa pode solicitar entrada no grupo e ela fica na fila de espera para alguém aprovar.
+
+Botega: Aí agora a gente teria que ter dois botões, né, o ser visitante de um próximo encontro e fazer parte.
+
+Alessandra: Eu acho que fica confuso, tá?
+
+Speaker J: Porque aí vai ser uma outra entrada. Porque hoje, quando a gente fala para entrar no grupo, a gente entra lá pelo fórmula, conversa. Eu queria canalizar a entrada nos grupos de um jeito único.
+
+Davi: Quando a pessoa vai, ela faz parte do grupo 1, ela vai fazer parte do grupo 2, ela tem que preencher o fórmula de novo?
+
+Alessandra: Não.
+
+Claudine: Então essa parte faz sentido, porque se ela só entra em um grupo, ela vai entrar tudo na Zona Sul. Várias vezes.
+
+Speaker G: Aí você tá dando opção dela escolher o grupo que ela vai entrar.
+
+Davi: Isso, ela já faz parte de um grupo. Isso ela olharia e fala: nossa, eu já faço parte de um grupo, quero fazer parte de outro. Ela procuraria grupos que existem, porque tem gente que entra, solicitaria vaga e alguém aprovaria dentro daquele grupo.
+
+Speaker G: Uma pessoa que não faz parte de nenhum, isso a gente que vai indicar daí.
+
+Davi: Não tem como, ela não vai ter acesso.
+
+Botega: Uma pessoa que não tem nenhum grupo não vai entrar no aplicativo. Ela não acessa essa página.
+
+Davi: A pessoa só vai fazer parte, só vai poder utilizar o aplicativo a partir do momento que ela faz parte de algum grupo. Então aqui seria, ela já faz parte de um grupo, ela pode entrar em outros grupos.
+
+Speaker H: Grupo.
+
+Davi: Ela solicita entrada e alguém aprova.
+
+Botega: Não necessariamente mudar, mas para fazer parte de mais um.
+
+Speaker J: É, não é troca.
+
+Claudine: Não, não troca.
+
+Speaker G: Depois que ela entrar no primeiro momento, vai estar numa fila de espera.
+
+Alessandra: Mas a fila não é de espera, não entrou.
+
+Davi: Aqui ela já está no grupo, aqui não é fila de espera. Aqui sim, quando a pessoa aprova para solicitarem para entrar em um outro grupo, ela entraria na fila de espera. Mas ela já faz parte parte de um ou mais grupos para estar no aplicativo.
+
+Speaker J: Aí vocês que fazem a gestão de quem entra em qual grupo vai pegar essa informação que tá no painel web lá de quem pediu para entrar, onde mais do que tá no Forms. Ah, espera, mas essa aqui quer entrar aqui, ó, lá. Daí vai ter que fazer essa gestão.
+
+Claudine: Isso, aparece comando quando você quer anotar.
+
+Speaker H: Pode ter informação sem vaga, sem fechado.
+
+Claudine: Ó, a nossa planilha Excel do Forms.
+
+Davi: É isso, daí a gente consegue fazer uma É uma coisa bem interessante.
+
+Claudine: Aí tem lista de espera de São Paulo, lista de espera do Rio de Janeiro, próximo grupo de Porto Alegre. A gente tem uma coluna que a gente só coloca isso que não tem representação nenhuma.
+
+Davi: Essa planilha ela vem já do Forms pronta ou vocês pegam os dados e passam para ela?
+
+Claudine: Não, isso aqui as pessoas preencheram o Forms.
+
+Davi: Ah tá, ok.
+
+Claudine: Com ela tem uma coluna que eu trabalho na coluna para eu distanciar.
+
+Davi: Com ela começa Com essa planilha a gente consegue fazer os disparos iniciais de email para as pessoas entrarem no aplicativo. Essa planilha para a gente é fundamental.
+
+Claudine: Eu mando agora, querido?
+
+Speaker J: Ih, vai demorar para fazer.
+
+Davi: Não precisa ser agora.
+
+Alessandra: Até vocês querem mandar para mim.
+
+Claudine: Não, mas eu tiro os dados pessoais.
+
+Davi: Mas é com ela que a gente consegue utilizar para disparar do funcionamento de email.
+
+Daniel: Mas não precisa ser agora, mas é ela que a gente tem que utilizar.
+
+Speaker J: Mas é legal mandar de coluna assim. O fórum, vocês já sabem, né? Sim, já sabem, né?
+
+Bruno: Vamos lá, os grupos. Sim, agora a gente vai seguindo no fluxo do encontro, né? Aqui é a lista de presença.
+
+Daniel: Vocês tinham dito que no encontro é bom fazer uma lista de presença para fazer o sorteio, para não fazer um sorteio com pessoas que não participaram, não estão presentes no encontro, né? Então aqui, por padrão, ela vai vir toda preenchida já tudo marcado e vocês desmarcam quem não tá presente.
+
+Botega: A tarefa da coordenadora é isso.
+
+Claudine: Também tem quem já foi sorteado, alguém já foi sorteado.
+
+Davi: Aqui já vai vir com um filtro pronto de quem não está naquele encontro e quem já foi sorteado. Ou seja, só quem pode ser sorteado para o mesmo.
+
+Bruno: É que são duas etapas, são a lista de presença, quem foi, e depois tem a lista do sorteio. Quem pode ser o seu tipo, ser fechado.
+
+Botega: A lista de presença até para vocês terem controle também. Aquela pessoa não foi em 5 encontros.
+
+Alessandra: Ótimo.
+
+Claudine: Aí sai a pressão dos meus ombrinhos, que eu sou muito criticada porque eu tenho programa. Ai, muita pressão. Aí o sistema vai lá: ô, você não vai há tanto ano, queria te dar uma lembradinha. É, faz 5 encontros que você não vem aqui.
+
+Speaker H: Esse grupo é quem tá mal acostumado, né?
+
+Claudine: É, não, eles acham que eu sou o dono porque eu não consigo entrar.
+
+Speaker H: Essa gente que entra na ausência, ela já parte de quem confirmou e não da lista geral.
+
+Alessandra: Sim, então quem confirmou vai estar na lista geral.
+
+Davi: E daí tu efetivamente pode confirmar se a pessoa foi exatamente ou não.
+
+Claudine: Não, quando chega lá dos 5 dias, todo mundo confirma aqui no aplicativo, não tem nada.
+
+Speaker J: Não, não, não, é a coordenadora.
+
+Bruno: É a coordenadora.
+
+Speaker G: É a coordenadora da reunião.
+
+Speaker J: Não, é a coordenadora.
+
+Speaker H: Não, o pré-encontro tu diz, eu vou ir, não vou. Quem disse que vai, tu vai estar com uma lista desses que eu voltei para ideia dessa pauta.
+
+Speaker J: É interessante se pudesse a coordenadora e a anfitriã daquele encontro ter essa funcionalidade. Daí são só duas pessoas. Pediu todo mundo fazer, é uma bagunça. Então na hora não dá. A anfitriã que sempre vai estar lá. Isso, que já é daquele encontro, que assim tá mudando a cada encontro.
+
+Bruno: Sim, sim. E daí a gente segue aqui para o sorteio em si.
+
+Daniel: Aqui é o botão do sorteio, não necessariamente vai ser esse botão, é só um exemplo. Aqui é o resultado do sorteio indicando quem que foi a anfitriã escolhida e qual que é o livro que foi escolhido.
+
+Botega: Vai ter uma dopaminazinha ali, apertou o botão, vai encher.
+
+Daniel: Aqui tem o histórico de sorteios do grupo, pode ver qual livro foi sorteado por último e a data que ele foi sorteado.
+
+Alessandra: E se quiser sortear novamente, tem Embaixo, né?
+
+Davi: Isso é, pode virar.
+
+Botega: Se a pessoa falar, eu não quero sair no retrato, pode fazer sorteio.
+
+Davi: Nesse próximo encontro, quando ele tá refazendo com sorteio, ele não vai considerar a pessoa que está efetivamente, foi sorteada, né? Senão não tem por que tu pode sortear a mesma pessoa 10 vezes, ela não vai querer.
+
+Claudine: Sim, não, não pode falar só um pouquinho.
+
+Speaker G: Eu quero falar de um assunto que não foi falado na primeira vez e eu acho importante. Muitas vezes os eventos são na residência, no salão de festas, tá? Aí a gente tem o mau hábito de fazer esse pagamento depois, né? Anfitrião paga tudo. Não, como acontece, a gente divide no dia seguinte e a gente dá uma data normalmente para o pessoal cancelar, confirmar se vai mesmo ou não, né? Quem confirma de novo naquela data em falta, a gente cobra igual, né? Porque tá na lista. Então assim, essa lista, suponhamos que o pessoal que confirmou presença, ela poderia ter um limite, por exemplo, para cancelar? Seria possível a gente fazer isso?
+
+Speaker J: Tipo assim, ó, você só pode a partir de tal dia.
+
+Alessandra: Pode ser isso?
+
+Botega: Dá para fazer, coloca isso, porque aí se ela não cancelou a tempo, ela vai ter que pagar, porque isso dá para usar de analista de presença lá e depois todos marcam que ela não foi, por exemplo.
+
+Claudine: Mas e se for tempo, a gente vai cancelar, a gente não vem até 24 horas, ela não pode mais pagar?
+
+Natan: Mas assim, acho que assim não dá conta também, né?
+
+Speaker J: Mas não, mas o sistema que vai saber.
+
+Speaker G: O sistema não vai deixar ela cancelar se ela falar assim.
+
+Botega: É 48 horas do evento.
+
+Speaker G: É?
+
+Botega: Deu 48 horas do evento, então tá confirmado no evento.
+
+Claudine: Eu quero ver ela confirmar.
+
+Botega: Ou tu vai automatizar.
+
+Davi: É, porque ela poderia confirmar, né, e desconfirmar. A não ser que vocês confirmaram, tá claro.
+
+Speaker G: Mas foi, ó, pode confirmar presença e desconfirmar dali uns dias, mas vai ter um prazo limite.
+
+Davi: Não, mas por exemplo, a pessoa, sei lá, 6 horas antes do evento, ela pode confirmar também ou não? É 48 horas é para Era para desmarcar e comer.
+
+Speaker G: Mas assim, quando a gente pode também, eu acho que pode, né, Cláudio? Porque assim, eu nunca errei ninguém que avisou de última hora, porque aí você divide por uma pessoa a mais. Quando é em local público, ela vai pagar no local. O problema é pessoa que confirma e não vai.
+
+Davi: Então só o desmarcar que não pode.
+
+Speaker J: Só o desmarcar que eu acho que seria legal.
+
+Speaker H: Mas a última 48 horas, a resposta de sempre, tu já fez a encomenda da comissão de assuntos da Geruana com 48 horas antes.
+
+Speaker G: Tô organizando uma sessão, mas eu acho assim, ó, que esse desmarcar tem que ser um pouco mais.
+
+Bruno: Eu acho que a gente pode entrar aqui nessa tela, que seria as tarefas da anfitriã.
+
+Speaker J: Não, não, vamos customizar uma para todo mundo igual.
+
+Speaker G: Por quê? Não, porque às vezes o pessoal quer subir filme uma semana antes, às vezes quer subir 4 dias antes.
+
+Speaker J: Às vezes a cafeteria que não faz diferença.
+
+Speaker G: Às vezes a cafeteria não precisa pagar antes.
+
+Botega: Às vezes você só tem que dar uma coridinha por conta do carro. Tem algumas telas ainda durante o evento.
+
+Bruno: Esse aqui é o fluxo das tarefas da anfitriã. Então logo que a anfitriã foi selecionada, ela tem que dizer ali o local, indicar várias coisas. Uma das coisas que ela pode indicar é quanto tempo de antecedência tu pode cancelar o encontro. Poderia ser só um campo opcional aqui, porque se ela tá planejando um evento maior, ela bota um prazo um pouco maior. Então aqui tem um fluxo de marcar data e local, então ela escolhe ali a data que ela pode ter. E as participantes vão receber uma notificação.
+
+Claudine: A coordenadora pode assumir o lugar do anfitrião se for necessário? Tem um anfitrião que tem muita dificuldade no aplicativo.
+
+Speaker J: Acho que a coordenadora pode ter sempre acesso.
+
+Claudine: A gente tem anfitrião, coordenador, anfitriã, seguindo os eventos.
+
+Davi: A ideia seria a responsabilidade ser dos dois.
+
+Claudine: E ser dos dois, né?
+
+Alessandra: Ótimo, é isso que eu queria dizer.
+
+Bruno: A anfitriã segue sendo anfitriã, ela segue organizando, mas a coordenadora que insere os dados no aplicativo de fato. Isso que eu quis dizer.
+
+Claudine: Não, não, tanto anfitrião, que isso aí é uma tarefa para anfitrião fazer, mas anfitrião não fez. Tem muitas limitações, ela não consegue.
+
+Bruno: Isso, pode liberar essa coordenadora.
+
+Daniel: As duas vão ter permissão para fazer esse fluxo. Aqui é o fluxo de fazer a tarefa de marcar o encontro. Ela vai dizer a data, o horário, local. Depois que ela simplificar, depois que ela marcar esse encontro, as participantes vão receber uma notificação no celular informando isso. Não necessariamente elas precisam estar com o aplicativo aberto para receber essa notificação.
+
+Bruno: A próxima tarefa seria enviar as fotos do encontro, isso depois que ele aconteceu de fato.
+
+Speaker H: A gente pode botar uma foto de um convite, porque isso tem sido muito utilizado.
+
+Claudine: Um card do convite.
+
+Bruno: Podemos adicionar.
+
+Alessandra: Isso tem sido muito utilizado.
+
+Bruno: Essa campanha não estava aqui, mas a gente pode adicionar.
+
+Botega: Tá.
+
+Daniel: Seria o pós do encontro, né, com as fotinhas.
+
+Alessandra: Não, esse é o antes, né? Depois eu vou fazer assim, a foto do convite é antes.
+
+Bruno: Essa, esse curso aqui seria foto do encontro em si, seria pós-encontro.
+
+Botega: Já botar o comentário que vocês tinham comentado.
+
+Daniel: Isso vai para aquele registro no Stories que a gente tinha visto na tela anterior, tem o registro dos encontros.
+
+Speaker H: Cara, a gente pode botar uma foto.
+
+Botega: Não, seria só Coloca uma foto do encontro, ou coordenadora, né?
+
+Davi: Ela fica responsável por isso.
+
+Claudine: Na verdade, isso aí é importante para o acesso das duas que fazem no Instagram. Não, só isso, porque o que acontece são 50 grupos. Tu vai pedir 50 coordenadoras mandar post para ti? Não, tu quer que seja juntado lá e tu vai lá embaixo, entendeu? Essa é a questão.
+
+Davi: A ideia seria coordenadora ou Aqui ela vai alimentar isso daí com dados e com a informação vinda.
+
+Botega: Querem dar uma passada?
+
+Daniel: Mostrar o dashboard da gestora administradora, né? Aqui é a entrada do dashboard, já vai botar o email e a senha dela para acessar o painel web. Essa seria a visão que ela teria dos grupos, então é uma tabela paginada.
+
+Speaker J: Isso é coordenadora, né?
+
+Daniel: Isso, exato.
+
+Bruno: Gestor, coordenador do grupo, é gestão, gestão é do clube inteiro.
+
+Davi: Isso é por isso que aqui aparece só administradores do sistema de grupos.
+
+Claudine: Hoje são 4 pessoas que vão mexer nisso.
+
+Daniel: Aqui é só uma demonstração de como vai ficar quando não tiver nenhum grupo cadastrado, que eu acho que não vai acontecer. Aqui a gente vai deixar uma tagzinha para mostrar Aqui dentro do grupo tu pode ver os participantes e os eventos, pode ver a coordenadora que é responsável, próximo encontro que tá agendado, pode ver as presenças, últimas presenças do usuário que tá nesse grupo. Então aqui tem um PPP, quer dizer que ela tava presente nos últimos 3. Tem uma opção nessa aba de ações específico Exclua o grupo para encerrar esse grupo. Dá um encerramento, desativa o grupo para novos encontros e remove a exibição da listagem ativa.
+
+Davi: Interessante.
+
+Claudine: Especialmente grupos maiores que a colégio.
+
+Bruno: Então vai ser importante isso.
+
+Claudine: Roubaram já grupos nossos, por exemplo. Formei grupo lá e a gente não quer mais ficar com você.
+
+Bruno: Pô, mas eu formei o grupo para ti, eu dei todas as pessoas e tudo, não quer mais?
+
+Claudine: Não quer mais. Aí depois some outra e umas migrar, né?
+
+Daniel: Sabe assim, isso é interessante até falar, porque se alguém for promovido a um coordenador que pode acessar esse painel, elas não vão poder tirar vocês.
+
+Botega: Muito bom!
+
+Daniel: Então ninguém vai roubar de vocês.
+
+Davi: É, a gente botar no super admin, que é você ser nosso super admin, que não tem nenhuma opção de alguém poder mudar.
+
+Claudine: Ah sim, ótimo!
+
+Daniel: Aqui seria o modelozinho para criar um novo grupo. Né, que era só gestão. Isso, só gestão.
+
+Alessandra: Vai ter bairro também?
+
+Claudine: Cidade Ozona, ele botou Porto Alegre, mas tem que ser São Paulo. É Cidade Ozona? Não, às vezes tem que ser cidade e bairro.
+
+Speaker G: E bairro, né?
+
+Speaker J: Se chama bairro Ozona?
+
+Speaker H: Não, é que aqui a gente usa Zona Sul, fora usa bairro.
+
+Claudine: São Paulo é Zona Sul. Só São Paulo, assim, Curitiba e São Paulo eu escuto mais.
+
+Speaker H: É mais, né?
+
+Daniel: Nós não vamos para o bairro, São Paulo, São Paulo, resolve isso das zonas, porque vocês agora só separam por zona Porto Alegre, né?
+
+Alessandra: Não, São Paulo também.
+
+Daniel: São Paulo também, pega um formulário da Transporte Porto Alegre, é uma novidade aí.
+
+Claudine: Vocês vão querer agora então botar todas as cidades Não, tem algumas cidades que se importam, outras não.
+
+Daniel: Se tu quiser trecho, tu quiser o trecho, aí é isso.
+
+Davi: O lugar legal seria a Zona Sul.
+
+Claudine: Cidade pequena não tem, mas se for para o Alex, São Paulo hoje, Rio de Janeiro também vai, vai pintar isso aí. Então estresse lá, que é muito deslocamento.
+
+Davi: Mas no Rio não é bairro assim, no Rio não é mais bairro também.
+
+Bruno: Mas qual que era o nome?
+
+Claudine: Zona Sul. A Barra é zona sul, eles já definiram. É zona sul porque ele pega mais bairros, mano. 65 bairros só, entendeu? Zona ainda com vários bairros, ainda com várias cidades embaixo.
+
+Davi: É, daí a zona pode ser opcional, daí tu marca ali caso queira.
+
+Alessandra: Isso, isso.
+
+Botega: Cidade obrigatória, no bairro.
+
+Daniel: Que a coordenadora inicial ela pode ser escolhida já na criação do grupo, uma pessoa que vai ser a coordenadora, ou pode ser definido depois.
+
+Davi: Cada um criando um grupo que não tem ninguém.
+
+Claudine: Se uma coordenadora vier de fora, eu posso cadastrá-la?
+
+Bruno: Se ela preencher, talvez tu possa cadastrar, mas eu acho que o mais comum seria ela preencher o formulário. Isso, não, ela vai preencher o formulário, daí a partir do momento que ela tá ali dentro do sistema, preencheu o formulário, e aí tu pode selecionar ela.
+
+Davi: Ela vai aparecer nessa lista ali, mas é possível, pode chegar configurado para outra coordenadora.
+
+Claudine: Entrar e ainda não vai ter o grupo formado, ou eu formo o grupo sem informação do coordenador?
+
+Botega: Tu pode criar um grupo vazio, posso criar um grupo sem ninguém.
+
+Speaker J: Que a gente mantenha a premissa que toda lei, todo usuário tem que ter um grupo, seja leitor, seja autor.
+
+Claudine: Hoje já tá vazio, não tem como entrar sem grupo. Alguém tem que se inscrever, senão o aplicativo perdiu logo.
+
+Daniel: O que seria editar um grupo é bem parecido com o de criar, só para quiser editar algum detalhe sobre o grupo, inclusive a coordenadora. Então se a Uzaya entrou depois no grupo, pode vir aqui em editar ele e botar ela como uma coordenadora. Aqui seria a visão dos participantes, também temos a mesma tabela paginada aqui. Aqui seria uma aba para ver as solicitações.
+
+Alessandra: Solicitações, né, de quem ela falou, pediu, queria entrar, vai aparecer ali.
+
+Daniel: Isso, exato. A gente vai ter dois botões de ver os detalhes dos participantes e editar o participante. Pinho de edição, pode mudar o nome, a zona, o contato dele, talvez botar aqui também Instagram, comentário.
+
+Bruno: Esse de acesso ao painel seria meio que Seria promover para gestor, para ter acesso a esse painel e compartilhar com o instituto.
+
+Claudine: Se crescer, continuar crescendo.
+
+Speaker J: Eu já vou fazer, tu vai fazer essa pergunta. O painel é para gestores e para coordenadores?
+
+Botega: Não, só gestores.
+
+Davi: Só seria promover para gestores.
+
+Claudine: Tá, porque o ponto que eu não preciso eu já tá vendo no aplicativo.
+
+Speaker J: Mas seria interessantíssimo os coordenadores poderem fazer a gestão do seu grupo, só do seu grupo, mas no aplicativo já dá. Não com as mesmas quantidades que tá aqui, com presença, com um docinho, textinha, trabalhando de jeito consolidado que nem tá aqui.
+
+Bruno: Mas para quem tá precisando, pode ter 80 pessoas, eu posso.
+
+Speaker J: Mas a pergunta contrária: por que não? Porque tudo tá pronto.
+
+Claudine: A única diferença é a dor dela, que não é minha.
+
+Speaker J: É a minha coordenadora, exatamente. A única diferença é que quando eu entrar como coordenadora, eu só vou ver o pessoal, os meus Acho que você pode adicionar. Assim, não vou poder criar grupo, não vou poder fazer as minhas ações.
+
+Claudine: Agora, esse via gestão só do seu grupo, todos que tu é coordenadora, por exemplo.
+
+Speaker J: Só do que eu sou coordenadora e não posso subir grupo.
+
+Claudine: Show, né?
+
+Speaker J: Porque daí deixa eu ir cortando. Porque é bem interessante, dona Duda, eu pensei que quem é que foi, quem é que não foi.
+
+Daniel: São papéis, né?
+
+Speaker G: No computador.
+
+Speaker J: Essa visão toda organizada, só que ela é para ajudar a estruturar, né?
+
+Claudine: Sim, a visão é diferente.
+
+Speaker J: Então, a informação tá toda lá, só que no aplicativo não tem, eu acho que não deve ter mesmo, funcionalidade dizendo quais são as últimas, quem é que não vê as últimas 3 vezes, sei lá. No aplicativo não tem isso, que eu acho que não devia ter mesmo. Agora aqui já tá tudo prontinho.
+
+Daniel: Aqui são os detalhes do participante. A gente pode ver o grupo e o status dele, se ele é um coordenador, se ele é um membro, qual a cidade também, e a presença, as últimas 3 presenças dele, né? E também as avaliações, a nota que ele deu e afins. Aqui tem a opção de tornar coordenador e de remover o participante. Então tu pode remover o participante do grupo por aqui.
+
+Alessandra: Não é melhor deixar ele inativo? Deixar a pessoa como inativa, não precisa remover do grupo.
+
+Bruno: Mas inativa dentro da Apple?
+
+Botega: Inativo no grupo.
+
+Claudine: Mas como é que vai continuar no aplicativo?
+
+Davi: Não, não teria mais.
+
+Botega: É, inativo, ativo, acionado.
+
+Claudine: Que é mais comum, se ela quiser voltar um dia, é.
+
+Speaker G: Pode ser.
+
+Claudine: Não perde o histórico dela.
+
+Speaker J: Tirar, tirou.
+
+Claudine: Será tipo, passou 6 meses, a pessoa ainda tinha histórico dela, daqui a pouco ela quer voltar e quer o histórico dela lá.
+
+Davi: Ela não é que ela saiu do grupo, ela foi tirada, ela se mudou, né?
+
+Claudine: Então às vezes, ah, eu vou fazer o mestrado, ganhei um filho, eu quero uma licença.
+
+Alessandra: Tem muito isso, tá?
+
+Claudine: Tem, era bom até botar suspensão das obrigações, sabe? Porque tem licença-maternidade, às vezes um monte de mulher vai mudar, às vezes Tem licença capacitação, licença saúde, a gente dá umas licenças assim, sabe? Mas é tudo uma brincadeira, né? Ai não, tu um ano tu não precisa se justificar aqui, né?
+
+Natan: Só uma dúvida: inativar usuário no grupo, isso abre um espaço no grupo?
+
+Speaker H: É gestão do coordenador, né?
+
+Alessandra: Que continua ativo?
+
+Claudine: Não necessariamente. Eu tenho 32 pessoas no grupo. Saiu 1:31, eu não vou abrir uma vaga. Abrir vaga é uma coisa que eu tenho que querer abrir, digamos assim.
+
+Speaker G: Acho que depois do tempo ela vai cair na tela.
+
+Natan: Pode cair na tela negativa?
+
+Davi: Pode.
+
+Claudine: Ah, eu tenho 30 vagas, eu vou abrir mais duas.
+
+Davi: Pode.
+
+Botega: Tá, ok, show.
+
+Speaker H: Beleza.
+
+Daniel: Aqui, caso tu vá remover um participante que é um coordenador, o sistema vai te pedir para promover outra pessoa à coordenação aí, né? Para o grupo não ficar sem coordenador. Aqui é só no caso dele não ser o coordenador, enfim, remover do grupo. São mais detalhes do usuário. Aqui seria o modal para mudar um participante para um coordenador. Tornar Josiane Alves como coordenadora do grupo 12. Eu acho que no painel é isso aqui. Tem que responder os gráficos, o dashboard, o princípio de uma tela. Isso é uma coisa que a gente precisa tirar dúvida com vocês, que a gente pensou na ideia de ter uma aba de dashboard onde vão mostrar gráficos. Então a gente queria entender quais gráficos seriam interessantes.
+
+Bruno: A gente também gosta de gráficos, mas a gente não sabia quais dados são importantes de mostrar.
+
+Claudine: Mostrar quais seriam os métodos de crescimento.
+
+Speaker G: Acho ótimo.
+
+Claudine: Ah, eu amo gráfico também.
+
+Daniel: Mas não necessariamente vocês precisam dar essa resposta agora, podem ir pensando e se tornar no grupo ali do WhatsApp. Acho que é meio complexo pensar nos gráficos agora do nada assim.
+
+Speaker H: Eu tinha dois recados para dar para vocês, tá? Um era assim, se vocês estão fazendo eventos de produção e criação, tá, Carol?
+
+Alessandra: Eu vou E outra coisa é se as plataformas da Apple e Android. Tá, pera aí, pessoal. Assim, o que que a gente quer? A gente quer que vocês já façam. A gente não quer que isso aqui seja só uma copy, entendeu? A gente já quer que tudo seja desenvolvido em produção. Então a gente precisa de um orçamento de site, um pequeno host que possa estar armazenando os dados, Supabase, entendeu? Porque realmente, quando terminar, ele vai entrar em produção. Não vai ser que nem um projeto que geralmente acontece muito na ágil, que o cliente vem, tá tudo lindo, daí ele vai embora, e aí ele tem que contratar uma empresa de tecnologia, pegar as fontes, botar na mente dele, pegar o banco, botar na mente dele. A gente já quer deixar tudo pronto já em mente de produção, tá?
+
+Claudine: Provavelmente uma coisa nova para muitos de vocês, né?
+
+Alessandra: Então requer, entendeu? Então façam um orçamento de qual é a melhor plataforma para subir, né? A gente vai ter um cursinho de software, você dá um orçamento, o que que vocês estão pensando hoje em termos de tecnologia, por favor?
+
+Natan: Propagação de plataforma para fazer deploy. A gente pode usar Fastlane porque ele faz tanto para Google Play Store quanto para Apple Store, só que aí tem a questão das licenças. A Google paga $25 uma vez, a Apple é $99.
+
+Alessandra: A gente vai pagar. Vocês têm conta de dev para subir o aplicativo?
+
+Natan: Não, o ideal seria criar uma conta com vocês. Por isso que tipo, eu acho que o Daniel tinha pedido o email de vocês do clube, que é justamente A gente já pensando nisso. Eu criei um provisório por conta disso, que a gente já queria ter algumas coisas.
+
+Claudine: Tá bom.
+
+Speaker H: O que mais?
+
+Alessandra: Banco, supa?
+
+Natan: A gente não vê uma demanda que exige tipo microserviço, etc. Tipo, supa base tá sofrendo aquele fluxo de email e tudo mais, toda aquela automação ali, o supa base já passa, né? O disparo de push notification, o link do Alphie, o do Lourdes também tem A gente pode criar uma conta enterprise lá dentro, tem que ver o pricing. É que o tier free já ia um global que a gente precisa.
+
+Alessandra: É, vamos tentar agora, não tem muito custo porque é outra leitura na base das coisas assim, entendeu? Então agora a gente vai bancar, né?
+
+Bruno: Sim.
+
+Davi: O tier free dura quanto tempo? Ou ele é por uso?
+
+Natan: Não, ele é por uso, mas tem limite de uso só, tipo 10 GB se eu não me engano para Acredito que seja suficiente.
+
+Davi: Acredito que seja suficiente curtir Air Free de experiência.
+
+Natan: A gente começa a curtir Air Free, depois a gente muda.
+
+Alessandra: Vocês têm que pensar assim, ó, não tem equipe de dev para manter depois neste momento. Então vai ter equipe de dev para manter e eu não vou manter. É, não, eu tenho que achar, vou pegar um estagiário para o clube de leitura depois, tá?
+
+Davi: Então, acho que esse semestre que vem já tem manutenção, não fica em dúvida.
+
+Alessandra: A gente não faz manutenção, a gente só faz movimento. Então é importante assim, ó, que você já pense em tudo agora, porque provavelmente vai exigir cartão de crédito para colocar nas plataformas, entendeu? E se possível, o primeiro deploy já Então vocês têm 15 dias aí para correr atrás, sem pressão, né?
+
+Botega: Para colocar na produção.
+
+Bruno: Primeiro depois da produção tu diz.
+
+Alessandra: Se quiser instalar o aplicativo, a gente usa no Android, não precisa subir para o iOS. A gente faz o teste primeiro.
+
+Natan: É que tu precisa ter o app registrado para usar o dashboard, ele tem que estar registrado. A gente fez no Aragro semana passada. Ele precisa existir na loja, mas ele não precisa estar publicado.
+
+Alessandra: A gente fez no projeto da Aragro, a gente subiu com Flashlight.
+
+Natan: Sim, mas tinha App Store Connect envolvido, etc. Tu precisa, para tu publicar no Test Flight, o bundle do app precisa estar registrado na época e não precisa estar publicado na loja, mas ele precisa existir lá.
+
+Bruno: Mas eu acho que antes dessa, para a gente ver isso aí, qual seria o, tu comentou de 15 dias, qual seria a expectativa assim de vocês de poder baixar o aplicativo, poder testar?
+
+Davi: Não, não, 15 dias para o deploy, para a próxima apresentação.
+
+Alessandra: Eu quero que vocês já comecem a desenvolver produção, entendeu? Porque eu vi que o ADM Web já era para primeiro sprint. Tem alguma coisa ali que na sprint 1 vocês têm alguma coisa de ADM, né?
+
+Bruno: Sim, sim, não um painel completo, mas pelo menos—
+
+Alessandra: Sim, então eu já quero que vocês subam em produção, entendeu?
+
+Bruno: Sim, sim, perfeito.
+
+Alessandra: Eu quero que já vocês entreguem, que elas possam estar clicando no link e já entrando em produção.
+
+Speaker J: Vai pular a validação então? Já vai direto então?
+
+Davi: Não, a gente pode ter 2 sprints.
+
+Alessandra: Não, já tô combinando com eles que já mostra hoje.
+
+Davi: Tipo assim, o prod, o de produção vai ficar o funcional, a gente tem a validação.
+
+Speaker H: Isso, deve lá.
+
+Davi: Mas a gente apresenta tudo já funcionando.
+
+Claudine: Tem certeza? Tá, pera aí, Brecht, não tô ouvindo, não tô ouvindo.
+
+Speaker J: Eu acho que para a galera ver assim, de se enxergar com os dados reais, vai ser mais fácil.
+
+Davi: Mas a gente pode criar os olhos para vocês, vocês conseguem utilizar eles, mas eu não sei se é interessante a gente já ter uma carga tão grande de dados com dados reais de pessoas, entendeu?
+
+Claudine: Mas nem é tão grande assim.
+
+Alessandra: Bom, deixa eu mostrar.
+
+Speaker J: Eu acho que não é.
+
+Natan: É uma preocupação legal. Sim, até o projeto ser aprovado nas loja sem ter um termo de uso, sem ter uma, uma política de dados.
+
+Davi: Então é interessante que a gente vai utilizar dados reais, a gente vai criar dados iguais que vocês, mas tipo assim, CPF fake, endereço fake, nada vai ser real. É melhor a gente ter esse, como a gente vai publicar, se por algum motivo alguém consegue acesso, vai, vai, tipo, tem uma chance de dar informação que não tem necessidade.
+
+Natan: E a luta deles depois de liberado é uma luta legal.
