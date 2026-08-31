@@ -11,6 +11,8 @@ timestamp: 2026-08-27
 
 Distribuição dos [épicos do MVP](./epicos-mvp.md) pelas sprints de desenvolvimento, da Sprint 1 (início em 27/08/2026) à Sprint 4, encerrando na entrega final de 18/11/2026. A Sprint 0 — planejamento, mockup no Figma e validação com as clientes — correu de 11/08 a 27/08/2026; as decisões dela estão registradas em [Decisões da Sprint 0](./decisoes-sprint-0.md).
 
+Ajustado após a [reunião de entrega de 27/08](../materiais/entrega-sprint-0/index.md): login social como fluxo primário, agenda com encontros de todos os grupos, inativação de participantes, janela de cancelamento de presença, lista de livros recomendados e deploy em produção postergado (ambiente de teste com contas do time até a validação do plano de produção).
+
 Organização: **sprint → épico (funcionalidade) → histórias de usuário**.
 
 ## Princípios da divisão
@@ -44,8 +46,8 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 
 **Épico 1 — Acesso e perfis**
 
-- Como leitora aprovada, quero ativar minha conta a partir de um convite, para acessar o aplicativo pela primeira vez.
-- Como leitora, quero entrar com meu login e recuperar o acesso quando necessário, para usar o aplicativo com segurança.
+- Como leitora aprovada, quero entrar com login social e inserir meu código de ativação, para acessar o aplicativo pela primeira vez.
+- Como leitora, quero entrar apenas com meu código de ativação, para usar o aplicativo mesmo sem provedor social.
 - Como leitora, quero visualizar e editar meus dados de perfil — com aviso de pendências na primeira entrada —, para completar meu cadastro.
 - As permissões de cada usuária (leitora, coordenadora, gestão) devem ser identificadas no acesso e refletidas no que cada uma pode fazer.
 
@@ -63,19 +65,19 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 
 **Fundação técnica**
 
-- Repositórios, CI/CD e ambientes das três frentes (app Flutter, painel web, backend/API).
+- Repositórios, CI/CD e ambientes de **teste** das três frentes (app Flutter, painel web, backend/API), com contas próprias do time; o deploy em produção fica postergado até a validação, com as clientes, do documento de stack e fluxo de deploy elaborado pela AGES III.
 - Contratos de API compartilhados entre app e painel definidos no início da sprint.
-- Seed da carga inicial (grupos, participantes, coordenações) na primeira semana, para destravar desenvolvimento e demo.
+- Seed da carga inicial (grupos, participantes, coordenações e a lista inicial de livros recomendados, a partir da planilha fornecida pela gestão) na primeira semana, para destravar desenvolvimento e demo.
 
 **Mínimo para funcionar (roteiro protegido da demo)**
 
 1. Gestão entra no painel web e cadastra/edita um grupo e suas participantes.
-2. Leitora recebe o convite e ativa a conta.
+2. Leitora entra com login social (ou código de ativação) e ativa o vínculo.
 3. Leitora entra, vê seus grupos, alterna entre eles e abre a página de um grupo.
 
 **Válvulas de escape**
 
-- Recuperação de acesso em versão simples (um canal, sem fluxo elaborado).
+- Reenvio de código de ativação em versão simples (sem fluxo elaborado de recuperação de conta).
 - CRUD do painel sem firulas: criar, editar e listar; detalhes e refinamentos podem esperar.
 
 ---
@@ -94,9 +96,13 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 
 - Como coordenadora, quero criar e editar encontros do grupo com livro, anfitriã, data, horário, local e observações, para organizar a agenda. *(É o ponto de partida manual do ciclo.)*
 - Como leitora, quero ver o próximo encontro do grupo e consultar encontros anteriores, para me planejar e relembrar.
-- Como leitora, quero confirmar minha presença no próximo encontro, para avisar a coordenação.
+- Como leitora, quero confirmar presença no próximo encontro — cancelável até o prazo do encontro (padrão de 48 horas, configurável na criação) —, para avisar a coordenação.
 - Como coordenadora ou anfitriã, quero ver quem confirmou presença, para organizar o encontro.
-- Como leitora de múltiplos grupos, quero uma agenda pessoal consolidada dos meus encontros, para planejar meu mês. *(válvula)*
+- Como leitora, quero uma agenda com os encontros dos meus grupos e, com dados limitados, os encontros dos demais grupos do clube, para me planejar e conhecer outras rodas.
+
+**Épico 10 — Dashboard de gestão (manutenção de livros recomendados)**
+
+- Como gestão, quero manter a lista de livros recomendados pelo clube, para que o aplicativo a exponha em leitura.
 
 **Enriquecimento da Sprint 1**
 
@@ -110,7 +116,7 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 
 **Válvulas de escape**
 
-- Agenda pessoal consolidada (só importa para participantes de múltiplos grupos): pode deslizar para a Sprint 4.
+- Os encontros de demais grupos na agenda (dados limitados): podem deslizar para a Sprint 4; o essencial é a agenda dos grupos da própria leitora.
 
 ---
 
@@ -120,7 +126,7 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 
 **Épico 5 — Lista de presença**
 
-- Como coordenadora, quero registrar a presença efetiva de cada participante no dia do encontro, para distinguir quem confirmou de quem compareceu.
+- Como coordenadora ou anfitriã do encontro, quero registrar a presença efetiva de cada participante no dia do encontro, para distinguir quem confirmou de quem compareceu.
 - Como coordenadora, quero consultar o histórico de presença por encontro e por leitora, para acompanhar ausências consecutivas. *(Base para o alerta de três faltas.)*
 - Como coordenadora ausente, quero delegar temporariamente a operação do encontro a outra leitora. *(válvula)*
 
@@ -134,7 +140,7 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 **Épico 7 — Pós-encontro (essencial)**
 
 - Como anfitriã ou coordenadora, quero preencher e confirmar data, horário e local do próximo encontro em rascunho, para oficializá-lo.
-- Como anfitriã, quero ver meu checklist de tarefas e pendências (divulgação, fotos, texto). *(válvula: pode deslizar para a Sprint 4)*
+- Como anfitriã, quero ver meu checklist de tarefas e pendências (foto do convite, divulgação, fotos, texto). *(válvula: pode deslizar para a Sprint 4)*
 - Como coordenação ou gestão autorizada, quero ver as pendências do próximo encontro, para acompanhar o que falta.
 
 **Épico 11 — Descoberta e entrada em grupos**
@@ -175,7 +181,7 @@ Organização: **sprint → épico (funcionalidade) → histórias de usuário**
 
 **Épico 7 — Pós-encontro (fechamento)**
 
-- Checklist de pendências completo, com visibilidade para anfitriã, coordenação e gestão autorizada, caso não tenha fechado na Sprint 3.
+- Checklist de pendências completo, com visibilidade para anfitriã, coordenação e gestão autorizada — incluindo download das fotos do encontro —, caso não tenha fechado na Sprint 3.
 
 **Histórico consolidado**
 

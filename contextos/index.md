@@ -12,3 +12,4 @@ As convenções (frontmatter, vocabulários de `type`/`status`/`tags`) estão no
 
 * [materiais/](materiais/) - Documentos externos e materiais brutos (termo de abertura, transcrições).
 * [planejamento/](planejamento/) - Planejamento de produto: épicos do MVP, roadmap de sprints e decisões consolidadas.
+* [site/](site/) - Presença do clube na web: landing page e afins.

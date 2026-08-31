@@ -9,7 +9,7 @@ timestamp: 2026-08-27
 
 # Épicos do MVP
 
-Baseado no [Termo de Abertura](../materiais/termo-de-abertura.md) e no [kickoff de 11/08](../materiais/kickoff/), refinado na Sprint 0. As decisões que sustentam este escopo estão registradas em [Decisões da Sprint 0](./decisoes-sprint-0.md).
+Baseado no [Termo de Abertura](../materiais/termo-de-abertura.md) e no [kickoff de 11/08](../materiais/kickoff/), refinado na Sprint 0 e ajustado após a [reunião de entrega de 27/08](../materiais/entrega-sprint-0/index.md). As decisões que sustentam este escopo estão registradas em [Decisões da Sprint 0](./decisoes-sprint-0.md); as em aberto, em [Decisões pendentes](./decisoes-pendentes.md).
 
 ## Direção do MVP
 
@@ -29,8 +29,9 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 
 **Abrange:**
 
-- ativação de conta a partir de convite, link ou token;
-- login e recuperação de acesso;
+- fluxo único de entrada: splash, tela de login com foco em login social (Google/Apple) e botão dedicado para inserir o código de ativação;
+- ativação e vínculo da identidade social aos dados da inscrição pelo código, inclusive quando o e-mail do provedor divergir do e-mail do formulário;
+- entrada apenas com o código de ativação, para quem não usa provedor social;
 - perfil básico da participante e edição dos próprios dados;
 - indicação de dados pendentes na primeira entrada;
 - identificação das permissões da usuária.
@@ -63,9 +64,11 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 - alteração da indicação enquanto ela não tiver sido sorteada;
 - registro de livros já sorteados/lidos no grupo;
 - bloqueio de livros já lidos no sorteio daquele grupo;
-- estado visível para a leitora sobre a sua indicação.
+- estado visível para a leitora sobre a sua indicação;
+- busca com separação clara entre os livros recomendados pelo clube e os resultados da API pública;
+- consulta, em leitura, à lista de livros recomendados pelo clube.
 
-**Não abrange:** catálogo editorial completo, links afiliados, curadoria ou recomendações automatizadas; a avaliação de livros lidos é tratada no épico 9.
+**Não abrange:** catálogo editorial completo, links afiliados, recomendações automatizadas; manutenção da lista de recomendados no aplicativo (a curadoria é da gestão, pelo painel — épico 10); a avaliação de livros lidos é tratada no épico 9.
 
 ### 4. Encontros
 
@@ -74,14 +77,14 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 **Abrange:**
 
 - visualização do próximo encontro por grupo;
-- agenda pessoal consolidada para participantes de múltiplos grupos;
+- agenda com os encontros dos grupos em que a leitora participa e, com dados limitados (grupo, data, livro), os encontros dos demais grupos do clube;
 - informações do encontro: grupo, livro, anfitriã, data, horário, local e observações;
 - criação e edição das informações por pessoas autorizadas;
-- confirmação de presença para o próximo encontro;
+- confirmação de presença para o próximo encontro, com cancelamento possível até o prazo do encontro — padrão de 48 horas, configurável pela anfitriã ou coordenadora na criação;
 - visão das confirmações pela coordenação e anfitriã;
 - consulta de encontros anteriores.
 
-**Não abrange:** visitantes, controle de vagas, agenda pública ou integração com calendários externos.
+**Não abrange:** solicitação de visita ou participação num encontro de outro grupo pelo aplicativo (fluxo escopado no backlog, pendente de decisão — ver [Decisões pendentes](./decisoes-pendentes.md)); agenda pública para quem não é do clube; controle de vagas; integração com calendários externos.
 
 ### 5. Lista de presença
 
@@ -90,7 +93,7 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 **Abrange:**
 
 - lista de participantes do grupo no dia do encontro;
-- registro manual de presença por coordenadora;
+- registro manual de presença pela coordenadora ou pela anfitriã daquele encontro;
 - distinção entre quem confirmou e quem compareceu;
 - histórico de presença por encontro e por leitora;
 - delegação temporária da operação do encontro para outra leitora, quando a coordenadora estiver ausente;
@@ -122,11 +125,12 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 
 - tarefas associadas à anfitriã do próximo encontro;
 - preenchimento e confirmação de data, local e informações do próximo encontro;
-- checklist de pendências, como material de divulgação, fotos e texto;
+- checklist de pendências, como foto do convite do encontro (pré), fotos do encontro (pós) e texto;
+- download das fotos do encontro, para reaproveitamento na divulgação;
 - visibilidade das pendências para anfitriã, coordenação e gestão autorizada;
 - histórico consolidado de encontro, presença, livro discutido, livro seguinte e anfitriã seguinte.
 
-**Não abrange:** editor de posts, publicação automática no Instagram ou gestão sofisticada de fotos.
+**Não abrange:** editor de posts, publicação automática no Instagram, geração ou otimização de legenda pronta para post (futuro) ou gestão sofisticada de fotos.
 
 ### 8. Notificações
 
@@ -167,7 +171,8 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 - dashboard com indicadores e gráficos do clube e cartões de pendência operacional;
 - calendário com os encontros de todos os grupos, filtrável por grupo e por cidade;
 - grupos: criar, editar, listar, ver detalhes e encerrar;
-- participantes: listar, ver detalhes, editar, conceder ou revogar acesso ao painel, remover de um grupo e decidir solicitações de entrada;
+- participantes: listar, ver detalhes, editar, conceder ou revogar acesso ao painel, inativar num grupo — status ativo/inativo que preserva o histórico; inativação não abre vaga —, remover quando necessário e decidir solicitações de entrada;
+- livros recomendados: manutenção da lista curada pelo clube, que o aplicativo expõe em leitura;
 - configurações: parâmetros de funcionamento do clube;
 - consulta ao histórico de um grupo a partir do painel.
 
@@ -185,7 +190,7 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 - aprovação ou recusa da solicitação pela gestão, dentro do módulo Participantes do painel web;
 - vínculo criado automaticamente quando a solicitação é aprovada.
 
-**Não abrange:** inscrição de quem ainda não é do clube (continua no formulário externo); entrada automática sem aprovação; convite de leitora para leitora.
+**Não abrange:** inscrição de quem ainda não é do clube (continua no formulário externo); entrada automática sem aprovação; convite de leitora para leitora; aprovação das solicitações pela coordenadora do grupo dentro do aplicativo (hoje a aprovação é da gestão no painel; mudança em discussão — ver [Decisões pendentes](./decisoes-pendentes.md)).
 
 ## Relação entre os épicos
 
@@ -214,6 +219,8 @@ e dá à gestão a visão do clube inteiro.
 ### Inscrição de novas participantes
 
 Fluxo para quem ainda não é do clube manifestar interesse e se candidatar, incluindo formulário, lista de espera, aprovação e convite de ativação. Permanece no Instagram e Google Forms. É distinto da descoberta de grupos entre leitoras já ativas, que é o épico 11.
+
+A migração das participantes existentes (~1.000 pessoas, a partir da planilha fornecida pela gestão) e o disparo em massa dos códigos de ativação são uma **operação única**, a executar quando o aplicativo estiver em condições de uso — não é funcionalidade do MVP. A mesma planilha alimenta o seed inicial da Sprint 1.
 
 ### Sugerir a criação de um novo grupo
 
