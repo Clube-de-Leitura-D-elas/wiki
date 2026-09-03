@@ -30,8 +30,8 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 **Abrange:**
 
 - fluxo único de entrada: splash, tela de login com foco em login social (Google/Apple) e botão dedicado para inserir o código de ativação;
-- ativação e vínculo da identidade social aos dados da inscrição pelo código, inclusive quando o e-mail do provedor divergir do e-mail do formulário;
-- entrada apenas com o código de ativação, para quem não usa provedor social;
+- ativação e vínculo da identidade social aos dados da inscrição pelo código;
+- entrada apenas com o código, email e senha, para quem não usa provedor social;
 - perfil básico da participante e edição dos próprios dados;
 - indicação de dados pendentes na primeira entrada;
 - identificação das permissões da usuária.
@@ -45,13 +45,12 @@ A gestão terá um painel web próprio para o trabalho administrativo, construí
 **Abrange:**
 
 - lista de grupos dos quais a leitora participa;
-- alternância entre grupos para participantes de múltiplos grupos;
 - página do grupo com participantes, coordenadoras, próximo encontro e resumo do histórico;
 - vínculo de uma participante a um ou mais grupos;
 - atribuição de coordenadora por grupo;
 - permissões operacionais da coordenadora naquele grupo.
 
-**Não abrange:** criação e encerramento de grupos (ficam no painel de gestão, épico 10) e descoberta pública de grupos; a descoberta entre leitoras ativas é tratada no épico 11.
+**Não abrange:** criação e encerramento de grupos (ficam no painel de gestão) e descoberta pública de grupos; a descoberta entre leitoras ativas é tratada no épico 11.
 
 ### 3. Indicação de livros
 
